@@ -1,0 +1,2 @@
+# Static-Resource-LightningWebComponents
+Static-Resource-LightningWebComponents
