@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Static Resource Demo" icon-name="custom:custom24">
+        <h1 class="slds-text-heading_large slds-box slds-text-align_center">
+            Static Resource Demo - SFDC Panther
+        </h1>
+        <div class="slds-m-around_medium">
+            <lightning-layout vertical-align="center">
+                <lightning-layout-item padding="around-small">
+                    <img src={einsteinURL} />
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <img src={astroURL} />
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <img src={codeyURL} />
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <image src={trailheadLWCURL} />
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        <div class="slds-m-around_medium">
+            <canvas class="stepped"></canvas>
+            <canvas class="bar"></canvas>
+        </div>
+        <template if:true={error}>
+            <c-error-pannel _errors={error} ></c-error-pannel>
+            <!-- <c-error-panel _errors={error}></c-error-panel> -->
+        </template>
+    </lightning-card>
+</template>
